@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.8s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Tort Card */
+.tort-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tort-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tort-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tort-card:hover img {
+    transform: scale(1.08);
+}
+
+.tort-card .card-body {
+    padding: 20px;
+    background: white;
+}
+
+.tort-card h5 {
+    color: #ec4899;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tort-card .narx {
+    color: #f97316;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.tort-card .location {
+    color: #6b7280;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tort-card .btn-warning {
+    transition: all 0.3s ease;
+}
+
+.tort-card .btn-warning:hover {
+    animation: pulse 0.6s ease-in-out;
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);
+}
+
+/* Contact Card */
+.contact-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #fbbf24;
+    background-color: #374151 !important;
+}
+
+.contact-card i {
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover i {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .display-5 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fbbf24 !important;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fbbf24 !important;
+}
+
+/* Section Headings */
+h2 {
+    color: #1f2937;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ec4899, #f97316);
+    border-radius: 2px;
+}
+
+/* Button Styling */
+.btn-warning {
+    background-color: #fbbf24;
+    border: none;
+    color: #1f2937;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #f59e0b;
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    border-top: 3px solid #f97316;
+}
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sections */
+section {
+    transition: all 0.3s ease;
+}
+
+/* Images */
+img {
+    transition: all 0.3s ease;
+}

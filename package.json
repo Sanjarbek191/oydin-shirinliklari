@@ -1,0 +1,20 @@
+{
+  "name": "oydin-shirinliklari",
+  "version": "1.0.0",
+  "description": "Oydin Shirinliklari - Online tort va shirinlik katalogi",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server"
+  },
+  "keywords": [
+    "tortlar",
+    "shirinliklar",
+    "bakery",
+    "cafe",
+    "tashkent"
+  ],
+  "author": "Sanjarbek191",
+  "license": "MIT",
+  "homepage": "https://github.com/Sanjarbek191/oydin-shirinliklari"
+}
